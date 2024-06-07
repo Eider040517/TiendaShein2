@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_Dep_Select">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/name_tienda"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="8dp"
+        android:text="Biemvenido"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tv_name_inserted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:text="nombre insetado" />
+
+    <ImageButton
+        android:id="@+id/btn_dep_men"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="92dp"
+        android:onClick="selecMenDep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@mipmap/hombre" />
+
+    <TextView
+        android:id="@+id/tv_men"
+        android:layout_width="23dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="88dp"
+
+        android:layout_marginTop="24dp"
+        android:text="@string/name_btn_men"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dep_men" />
+
+    <ImageButton
+        android:id="@+id/btn_dep_woman"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="56dp"
+        android:onClick="selecWomanDep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_inserted"
+        app:srcCompat="@mipmap/mujer" />
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="84dp"
+        android:text="@string/name_btn_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dep_home" />
+
+    <TextView
+        android:id="@+id/tv_pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="84dp"
+        android:text="@string/name_btn_pets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dep_pet" />
+
+    <ImageButton
+        android:id="@+id/btn_dep_home"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:onClick="selecHomeDep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_woman"
+        app:srcCompat="@mipmap/hogarcocina" />
+
+    <ImageButton
+        android:id="@+id/btn_dep_pet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
+        android:onClick="selecPetsDep"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_home"
+        app:srcCompat="@mipmap/mascotas" />
+
+    <TextView
+        android:id="@+id/tv_woman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/name_btn_woman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dep_woman" />
+
+    <ImageButton
+        android:id="@+id/btn_dep_child"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:onClick="selecChildDep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_men"
+        app:srcCompat="@mipmap/ninnos" />
+
+    <TextView
+        android:id="@+id/tv_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_btn_child"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dep_child" />
+
+    <ImageButton
+        android:id="@+id/btn_dep_beach"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:onClick="selecBeachDep"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_child"
+        app:srcCompat="@mipmap/playa" />
+
+    <TextView
+        android:id="@+id/tv_beach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/name_btn_beach"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dep_beach" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

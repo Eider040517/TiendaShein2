@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity_Dep_Beach">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp">
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="27dp"
+            android:gravity="center"
+            android:text="@string/name_tienda"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/txt_view_name_Beach"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="58dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_view_name_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="23dp"
+            android:gravity="center"
+            android:text="@string/name_tv_dep_beach"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="210dp">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="332dp"
+                    app:srcCompat="@drawable/e10beachpelota" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Pelota de voleibol de playa, ideal para juegos recreativos en la arena.\nMaterial: Goma resistente al agua\nTamaño: Estándar\nPrecio: $15.00\nInstrucciones de cuidado: Limpiar con un paño húmedo.\n\n\n"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/e11beachtabla" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Tabla de surf para principiantes, con diseño estable y fácil de manejar en olas pequeñas.\nMaterial: Espuma de poliestireno y recubrimiento de fibra de vidrio\nDimensiones: 7' x 21'' x 2.5''\nPrecio: $200.00\nInstrucciones de cuidado: Enjuagar con agua dulce después de cada uso.\n\n\n"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/e12beachpelota" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Pelota inflable de playa, perfecta para juegos acuáticos y diversión en la arena.\nMaterial: PVC resistente\nDiámetro: 30 cm\nPrecio: $10.00\nInstrucciones de cuidado: Inflar con una bomba de aire y evitar pinchazos.\n\n\n"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/e13beachsillas" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Sillas playeras plegables, ideales para llevar a la playa y disfrutar del sol y el mar.\nMaterial: Aluminio y tela resistente\nDimensiones (plegada): 50 cm x 40 cm x 15 cm\nPrecio: $25.00 (por unidad)\nInstrucciones de cuidado: Limpiar con un paño húmedo y secar al aire.\n\n\n"
+                    android:textSize="16sp" />
+
+
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/e14beachchancletas" />
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Chancletas de playa para hombre, cómodas y resistentes al agua.\nMaterial: Goma flexible\nTallas: 40-44\nPrecio: $20.00\nInstrucciones de cuidado: Enjuagar con agua dulce después de usar en la playa.\n\n\n"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/e15beachjuguetes" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Set de juguetes de playa para niños, ideal para divertirse en la arena.\nMaterial: Plástico resistente\nIncluye: Cubo, pala, rastrillo, moldes de figuras\nPrecio: $15.00\nInstrucciones de cuidado: Limpiar con agua y jabón después de su uso.\n\n\n"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/e16beachconjuntodeplaya" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Conjunto de ropa de playa para hombre, compuesto por camiseta y pantalón corto.\nMaterial: Algodón ligero\nTallas: S, M, L, XL\nPrecio: $35.00\nInstrucciones de cuidado: Lavar a máquina en ciclo suave y secar al aire.\n\n\n"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/e17beachshort" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Short de playa para hombre, cómodo y transpirable.\nMaterial: Tela de secado rápido\nTallas: S, M, L, XL\nPrecio: $25.00\nInstrucciones de cuidado: Lavado a máquina con agua fría.\n\n\n"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/e18beachtoalla" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Toalla de playa grande y absorbente, perfecta para descansar en la arena.\nMaterial: Algodón suave\nDimensiones: 150 cm x 75 cm\nPrecio: $30.00\nInstrucciones de cuidado: Lavar a máquina con colores similares.\n\n\n"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/e19beachsombrero" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Sombrero de playa para hombre, con protección UV y ala ancha para mayor sombra.\nMaterial: Rafia trenzada\nTalla: Única (ajustable)\nPrecio: $20.00\nInstrucciones de cuidado: Limpiar con un paño húmedo.\n\n\n"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

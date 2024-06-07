@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity_Dep_Woman">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="178dp">
+
+
+        <Button
+            android:id="@+id/btn_woman_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cambiar_menu"
+            android:text="Menu" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/name_tienda"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/txt_view_name_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="57dp"
+            android:text="@string/name_tv_dep_woman"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/name_tv_dep_woman"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="210dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="332dp"
+                    app:srcCompat="@drawable/b10womanjeans" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Jeans clásicos para mujer, perfectos para un look casual.\nMaterial: 98% algodón, 2% elastano\nTallas: S, M, L, XL\nPrecio: $50.00\nInstrucciones de cuidado: Lavado a máquina con colores similares.\n\n\n\n    "
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/b11womanconjunto" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Conjunto formal para mujer, ideal para ocasiones especiales.\nMaterial: 100% algodón\nTallas: S, M, L, XL\nPrecio: $120.00\nInstrucciones de cuidado: Lavar a mano con agua fría.\n\n\n\n    "
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/b12womancartera" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Cartera de cuero para mujer, elegante y práctica.\nMaterial: Cuero genuino\nTallas: Única\nPrecio: $70.00\nInstrucciones de cuidado: Limpiar con un paño seco.\n\n\n\n    "
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/b13womanzapatosdetacon" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Zapatos de tacón para mujer, elegantes y cómodos.\nMaterial: Cuero sintético\nTallas: 36, 37, 38, 39, 40\nPrecio: $60.00\nInstrucciones de cuidado: Limpiar con un paño húmedo.\n\n\n\n    "
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/b14womantrajedenoche"/>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Traje de noche para mujer, elegante y sofisticado.\nMaterial: Seda\nTallas: S, M, L, XL\nPrecio: $150.00\nInstrucciones de cuidado: Lavado en seco.\n\n\n\n    "
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/b15womanzapatillas" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Zapatillas deportivas para mujer, cómodas y ligeras.\nMaterial: Malla y suela de goma\nTallas: 36, 37, 38, 39, 40\nPrecio: $70.00\nInstrucciones de cuidado: Lavado a máquina en ciclo suave.\n\n\n\n    "
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/b16womanshort" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Shorts casuales para mujer, perfectos para el verano.\nMaterial: 100% algodón\nTallas: S, M, L, XL\nPrecio: $35.00\nInstrucciones de cuidado: Lavado a máquina con colores similares.\n\n\n\n    "
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/b17womnaswetersincuello" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Suéter sin cuello para mujer, ideal para climas fríos.\nMaterial: 100% lana merino\nTallas: S, M, L, XL\nPrecio: $60.00\nInstrucciones de cuidado: Lavar a mano con agua fría y secar al aire.\n\n\n\n    "
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/b18womansanadaliasplataforma" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Sandalias de plataforma para mujer, modernas y cómodas.\nMaterial: Cuero sintético\nTallas: 36, 37, 38, 39, 40\nPrecio: $50.00\nInstrucciones de cuidado: Limpiar con un paño húmedo.\n\n\n\n    "
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/b19womanconjunto" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: Conjunto casual para mujer, perfecto para el día a día.\nMaterial: 100% algodón\nTallas: S, M, L, XL\nPrecio: $80.00\nInstrucciones de cuidado: Lavado a máquina con colores similares.\n\n\n\n    "
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>

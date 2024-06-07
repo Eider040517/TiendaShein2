@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Tienda Shein</string>
+    <string name="name_tienda">Tienda Shein</string>
+    <string name="name_menu">Menú</string>
+    <string name="name_horarios">Horarios</string>
+    <string name="name_direccion">Dirección y Teléfonos</string>
+    <string name="name_inset_mane">Ingrese su nombre</string>
+    <string name="name_siguiente">Siguiente</string>
+    <string name="name_btn_men">Men </string>
+    <string name="name_btn_woman">Woman </string>
+    <string name="name_btn_child">Child </string>
+    <string name="name_btn_home">Home </string>
+    <string name="name_btn_beach">Beach </string>
+    <string name="name_btn_pets">Pets </string>
+    <string name="name_tv_dep_men">Men Secction</string>
+    <string name="name_tv_dep_woman">Woman Secction</string>
+    <string name="name_tv_dep_child">Child Secction</string>
+    <string name="name_tv_dep_home">Home Secction</string>
+    <string name="name_tv_dep_beach">Beach Secction</string>
+    <string name="name_tv_dep_pets">Pets Secction</string>
+    <string name="name_tv_direccion_telefono">Direccción y Teléfonos</string>
+
+
+    <!-- Dirección y Teléfono de la Tienda 1 -->
+    <string name="store1_name">Tienda Avenida Balboa</string>
+    <string name="store1_address">Av. Balboa, Ciudad de Panamá, Panamá</string>
+    <string name="store1_phone">+507 1234-5678</string>
+
+    <!-- Dirección y Teléfono de la Tienda 2 -->
+    <string name="store2_name">Tienda Calle 50</string>
+    <string name="store2_address">Calle 50, Ciudad de Panamá, Panamá</string>
+    <string name="store2_phone">+507 2345-6789</string>
+
+    <!-- Dirección y Teléfono de la Tienda 3 -->
+    <string name="store3_name">Tienda Vía España</string>
+    <string name="store3_address">Vía España, Ciudad de Panamá, Panamá</string>
+    <string name="store3_phone">+507 3456-7890</string>
+
+
+</resources>
