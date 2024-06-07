@@ -1,6 +1,8 @@
 package com.example.sengundashein;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -26,5 +28,11 @@ public class MainActivity_Dep_Pets extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void cambiar_menu (View view){
+        Intent var_call_Departamentos=new Intent(this, MainActivity.class) ;
+        var_call_Departamentos.putExtra("name", txt_name.getText().toString());
+        startActivity(var_call_Departamentos);
     }
 }

@@ -1,6 +1,9 @@
 package com.example.sengundashein;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity_Direccion_Telefono extends AppCompatActivity {
-
+    private TextView txt_name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +23,11 @@ public class MainActivity_Direccion_Telefono extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void cambiar_menu (View view){
+        Intent var_call_Departamentos=new Intent(this, MainActivity.class) ;
+        var_call_Departamentos.putExtra("name", txt_name.getText().toString());
+        startActivity(var_call_Departamentos);
     }
 }

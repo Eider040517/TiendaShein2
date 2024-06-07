@@ -22,7 +22,7 @@
 
     <Button
         android:id="@+id/btn_menu"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="56dp"
         android:onClick="insert_name"
@@ -33,7 +33,7 @@
 
     <Button
         android:id="@+id/btn_horarios"
-        android:layout_width="200dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="4dp"
         android:onClick="mostrarHorarios"
@@ -44,7 +44,7 @@
 
     <Button
         android:id="@+id/btn_direccion"
-        android:layout_width="226dp"
+        android:layout_width="250dp"
         android:layout_height="49dp"
         android:layout_marginTop="4dp"
         android:onClick="mostrarDireccionTelefono"

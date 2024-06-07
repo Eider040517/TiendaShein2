@@ -65,4 +65,11 @@ public class MainActivity_Dep_Select extends AppCompatActivity {
     }
 
 
+
+    public void cambiar_menu (View view){
+        Intent var_call_Departamentos=new Intent(this, MainActivity.class) ;
+        var_call_Departamentos.putExtra("name", txt_name.getText().toString());
+        startActivity(var_call_Departamentos);
+    }
+
 }
