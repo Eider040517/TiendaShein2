@@ -18,6 +18,11 @@ public class MainActivity_Direccion_Telefono extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main_direccion_telefono);
+
+        txt_name = (TextView) findViewById(R.id.text_view_name_men);
+        String nombre = getIntent().getStringExtra("name");
+        txt_name.setText(nombre);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

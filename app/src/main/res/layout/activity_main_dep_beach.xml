@@ -10,46 +10,58 @@
     tools:context=".MainActivity_Dep_Beach">
 
 
-    <RelativeLayout
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="176dp">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="340dp"
-            android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="43dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="27dp"
-            android:gravity="center"
-            android:text="@string/name_tienda"
-            android:textSize="34sp" />
-
-        <TextView
-            android:id="@+id/txt_view_name_Beach"
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="58dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:onClick="cambiar_menu"
+                android:text="Home"
+                android:textColor="#3F51B5"
+                android:textColorLink="#00FFFFFF"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="150dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/txt_view_name_Beach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center">
 
         <TextView
-            android:id="@+id/txt_view_name_home"
-            android:layout_width="match_parent"
+            android:id="@+id/txt_name_home"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="23dp"
-            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center|left|fill_vertical"
             android:text="@string/name_tv_dep_beach"
-            android:textSize="24sp" />
-
-    </RelativeLayout>
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"

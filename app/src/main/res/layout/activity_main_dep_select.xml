@@ -1,179 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity_Dep_Select">
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/name_tienda"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="8dp"
-        android:text="Biemvenido"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
 
-    <TextView
-        android:id="@+id/tv_name_inserted"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:onClick="cambiar_menu"
+                android:text="Home"
+                android:textColor="#3F51B5"
+                android:textColorLink="#00FFFFFF"
+                android:textSize="20sp" />
 
-        android:layout_marginTop="15dp"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:text="nombre insetado" />
+            <Space
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
 
-    <ImageButton
-        android:id="@+id/btn_dep_men"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+            <TextView
+                android:id="@+id/tv_name_inserted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="92dp"
-        android:onClick="selecMenDep"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@mipmap/hombre" />
+                android:textSize="24sp"
+                tools:text="Nombre" />
 
-    <TextView
-        android:id="@+id/tv_men"
-        android:layout_width="23dp"
-        android:layout_height="19dp"
-        android:layout_marginStart="88dp"
+        </TableRow>
 
-        android:layout_marginTop="24dp"
-        android:text="@string/name_btn_men"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_dep_men" />
+    </TableLayout>
 
-    <ImageButton
-        android:id="@+id/btn_dep_woman"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
 
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="56dp"
-        android:onClick="selecWomanDep"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name_inserted"
-        app:srcCompat="@mipmap/mujer" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Secciones"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="82dp" />
+    </RelativeLayout>
 
-    <TextView
-        android:id="@+id/tv_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="84dp"
-        android:text="@string/name_btn_home"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_dep_home" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_pet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="84dp"
-        android:text="@string/name_btn_pets"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_dep_pet" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
 
-    <ImageButton
-        android:id="@+id/btn_dep_home"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
 
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="56dp"
-        android:onClick="selecHomeDep"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_woman"
-        app:srcCompat="@mipmap/hogarcocina" />
+                <ImageButton
+                    android:id="@+id/btn_dep_men"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
 
-    <ImageButton
-        android:id="@+id/btn_dep_pet"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+                    android:onClick="selecMenDep"
+                    app:srcCompat="@mipmap/hombre" />
 
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="56dp"
-        android:onClick="selecPetsDep"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_home"
-        app:srcCompat="@mipmap/mascotas" />
+                <TextView
+                    android:id="@+id/tv_men"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/tv_woman"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="76dp"
-        android:text="@string/name_btn_woman"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_dep_woman" />
+                    android:text="@string/name_btn_men"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/btn_dep_child"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
 
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="28dp"
-        android:onClick="selecChildDep"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_men"
-        app:srcCompat="@mipmap/ninnos" />
+                <ImageButton
+                    android:id="@+id/btn_dep_woman"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:onClick="selecWomanDep"
+                    app:srcCompat="@mipmap/mujer" />
 
-    <TextView
-        android:id="@+id/tv_child"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/name_btn_child"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_dep_child" />
+                <TextView
+                    android:id="@+id/tv_woman"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/name_btn_woman"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/btn_dep_beach"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        </TableRow>
 
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="20dp"
-        android:onClick="selecBeachDep"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_child"
-        app:srcCompat="@mipmap/playa" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
 
-    <TextView
-        android:id="@+id/tv_beach"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/name_btn_beach"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_dep_beach" />
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_dep_home"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+
+                    android:onClick="selecHomeDep"
+                    app:srcCompat="@mipmap/hogarcocina" />
+
+                <TextView
+                    android:id="@+id/tv_home"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/name_btn_home"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_dep_pet"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+
+                    android:onClick="selecPetsDep"
+                    app:srcCompat="@mipmap/mascotas" />
+
+                <TextView
+                    android:id="@+id/tv_pet"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/name_btn_pets"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_dep_child"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+
+                    android:onClick="selecChildDep"
+                    app:srcCompat="@mipmap/ninnos" />
+
+                <TextView
+                    android:id="@+id/tv_child"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/name_btn_child"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_dep_beach"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+
+                    android:onClick="selecBeachDep"
+                    app:srcCompat="@mipmap/playa" />
+
+                <TextView
+                    android:id="@+id/tv_beach"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/name_btn_beach"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

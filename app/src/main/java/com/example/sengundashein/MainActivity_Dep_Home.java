@@ -19,7 +19,7 @@ public class MainActivity_Dep_Home extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main_dep_home);
 
-        txt_name = (TextView) findViewById(R.id.txt_view_name_home);
+        txt_name = (TextView) findViewById(R.id.txt_name_home);
         String nombre = getIntent().getStringExtra("name");
         txt_name.setText(nombre);
 

@@ -9,48 +9,57 @@
     tools:context=".MainActivity_Dep_Child">
 
 
-    <RelativeLayout
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="240dp">
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:onClick="cambiar_menu"
+                android:text="Home"
+                android:textColor="#3F51B5"
+                android:textColorLink="#00FFFFFF"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_view_name_child"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
 
         <TextView
-            android:id="@+id/textView30"
+            android:id="@+id/txt_name_home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="84dp"
-            android:layout_marginTop="46dp"
-            android:text="@string/name_tienda"
-            android:textSize="34sp" />
-
-        <TextView
-            android:id="@+id/txt_view_name_child"
-            android:layout_width="244dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView30"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="84dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="82dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
             android:text="@string/name_tv_dep_child"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/txt_view_name_home"
-            android:layout_width="244dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView30"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="84dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="82dp"
-            android:text="@string/name_tv_dep_child"
-            android:textSize="24sp" />
-
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"

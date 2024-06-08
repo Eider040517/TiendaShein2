@@ -20,6 +20,11 @@ public class MainActivity_Horarios extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main_horarios);
+
+        txt_name = (TextView) findViewById(R.id.text_view_name_men);
+        String nombre = getIntent().getStringExtra("name");
+        txt_name.setText(nombre);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

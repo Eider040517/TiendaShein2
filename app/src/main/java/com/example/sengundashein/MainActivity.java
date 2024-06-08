@@ -39,14 +39,17 @@ public class MainActivity extends AppCompatActivity {
     }
     public void mostrarHorarios(View view) {
         Intent var_mostrar_horarios= new Intent(this,MainActivity_Horarios.class);
+        var_mostrar_horarios.putExtra("name", txt_name.getText().toString());
         startActivity(var_mostrar_horarios);
     }
     public void mostrarDireccionTelefono(View view){
         Intent var_mostrar_direcccionTelefono = new Intent(this, MainActivity_Direccion_Telefono.class);
+        var_mostrar_direcccionTelefono.putExtra("name", txt_name.getText().toString());
         startActivity(var_mostrar_direcccionTelefono);
     }
     public void insert_name(View view){
         Intent var_insert_name=new Intent(this, MainActivity_Insert_name.class);
+        var_insert_name.putExtra("name", txt_name.getText().toString());
         startActivity(var_insert_name);
     }
 
